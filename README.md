@@ -71,7 +71,7 @@ from ntlk.stem import WordNetLemmatizer
 
 
 The uses of all these libraries are explained below.
-#1. Stopwords: Stop words are those common words that appear in a text many times and do not contribute to machine’s understanding of the text.
+    # 1. Stopwords: Stop words are those common words that appear in a text many times and do not contribute to machine’s understanding of the text.
 We don’t want these words to appear in our data. So, we remove these words.
 
 
@@ -79,7 +79,7 @@ All these stopwords are stored in the ntlk library in different languages.
 
 stop_words = stopwords.words('english')
 
-#2. Tokenization: Word tokenization is the process of splitting a large sample of text into words.
+   # 2. Tokenization: Word tokenization is the process of splitting a large sample of text into words.
 For example:
 word_data = "It originated from the idea that there are readers who prefer learning new skills from the comforts of their drawing rooms"
 nltk_tokens = nltk.word_tokenize(word_data)
@@ -89,7 +89,7 @@ It will convert the string word_data into this:
 [‘It’, ‘originated’, ‘from’, ‘the’, ‘idea’, ‘that’, ‘there’, ‘are’, ‘readers’, ‘who’, ‘prefer’, ‘learning’, ‘new’, ‘skills’, ‘from’, ‘the’, ‘comforts’, ‘of’, ‘their’, ‘drawing’, ‘rooms’]
 
 
-#3. Lemmatization: Lemmatization is the process of grouping together the different inflected forms of same root word so they can be analysed as a single item.
+   # 3. Lemmatization: Lemmatization is the process of grouping together the different inflected forms of same root word so they can be analysed as a single item.
 Examples of lemmatization:
 swimming → swim
 rocks → rock
@@ -123,7 +123,7 @@ For converting this text data into numerical data, we will use two vectorizers.
 
 
 
-#5. Count Vectorizer
+   # 5. Count Vectorizer
 In order to use textual data for predictive modelling, the text must be parsed to remove certain words — this process is called tokenization. These words need to then be encoded as integers, or floating-point values, for use as inputs in machine learning algorithms. This process is called feature extraction (or vectorization).
 
 TF-IDF Vectorizer
