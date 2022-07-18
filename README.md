@@ -49,7 +49,7 @@ train.head()
 Here’s how the training data looks like
 We can see that the features ‘title’, ‘author’ and ‘text’ are important and all are in text form. So, we can combine these features to make one final feature which we will use to train the model. Let’s call the feature ‘total’.
 
-# Firstly, fill all the null spaces with a space
+Firstly, fill all the null spaces with a space
 train = train.fillna(' ')
 train['total'] = train['title'] + ' ' + train['author'] + ' ' +
                  train['text']
